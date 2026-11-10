@@ -1,0 +1,11 @@
+[
+  {
+    "meta-annotation-id": "hc21qncwl23kd3bb9qgzm3ag",
+    "trace-id": "9a18cee662cd836e22a3cc37fb3e393a",
+    "utterance-idx": 10,
+    "judge-model": "GPT-OSS-120B:low",
+    "judge-critique": "The assistant proceeded to fetch details for an order without first confirming the correct order with the user, which breaks the required workflow.",
+    "meta-judgement": "Incorrect",
+    "meta-comment": "Agent is going through correct process of iterating through orders to check their contents"
+  }
+]

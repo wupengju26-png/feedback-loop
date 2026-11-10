@@ -1,0 +1,53 @@
+{
+  "recorded_at": "2026-11-10T05:52:01.866982+00:00",
+  "generator": "Current Codex session model and helper agents inheriting that model; no separate API inference run",
+  "method": "01 is an assistant-authored worked example; 02-10 use the same saved prompt in separate helper contexts without source annotations. Each candidate is saved before its own reference is read. Cross-review starts only after its candidate hash is recorded.",
+  "exact_model_id": "Not exposed by this execution environment",
+  "finalized": true,
+  "files": [
+    {
+      "file": "prompt.txt",
+      "sha256": "e4c7adab3791a2748d70aa539b484e242b1b3660a0265968e19c1c423c870051"
+    },
+    {
+      "file": "feedback/01-abd7779bc087bd7719a6f89e609f816b.json",
+      "sha256": "58836ceec2173fc41c8289ea70dc44149a3ba2513e851c1e07f5b51c9337fcdb"
+    },
+    {
+      "file": "feedback/02-b664c89700b0b5efba8a9ff33a4919c3.json",
+      "sha256": "7a37c7036f57ba16ea4af9a9075d109c2fc86a1280cd268fce630a592690a0fa"
+    },
+    {
+      "file": "feedback/03-6fb96ef33934426e1c5deddd8cf139c6.json",
+      "sha256": "a72336ea66f5b7dc1c79d8f69f68d83e80e166244c9004cb69b57888cc94c2fa"
+    },
+    {
+      "file": "feedback/04-a46411fc0ff67e184202e47bcb0e2f67.json",
+      "sha256": "50faf1b605e2561df01615c969cf71632903cf6f80cce9408b73833bc4623ec4"
+    },
+    {
+      "file": "feedback/05-7a278f414113e7483f80d7530f7de6e6.json",
+      "sha256": "c04c1e2d3c0893e644c3149e93dbef57e69b1bedebb92cdad327d628782ee768"
+    },
+    {
+      "file": "feedback/06-883ca6a9e20e9ab41403f246786a3a9a.json",
+      "sha256": "4989316e55e063f2599ca858afd0b1cacd95d1871b88b6c6640ba80bdd69b3a1"
+    },
+    {
+      "file": "feedback/07-7d236de555758c260d9b2a2c10ed37cd.json",
+      "sha256": "aecd8f765d95dac6137d5ab65531f31640d2c318823d58a2a6570919403580ec"
+    },
+    {
+      "file": "feedback/08-9a18cee662cd836e22a3cc37fb3e393a.json",
+      "sha256": "04b9f6cc3e2524f767c7418410259b2a7763e6d7ea3306f58bea5f28cab8e7d4"
+    },
+    {
+      "file": "feedback/09-4bdf161be792a6c3c7c09a96b818c7ca.json",
+      "sha256": "e98bc9843486117ee9af9bd47ca740525eb78d75764ed1d9cd20815d305b8348"
+    },
+    {
+      "file": "feedback/10-b08705935c0f07d2b3344a5e8b5d7abc.json",
+      "sha256": "dbb5576932a5e2f424534b5bca18260d86bfaa2b90938f7d65f99746a4523343"
+    }
+  ]
+}

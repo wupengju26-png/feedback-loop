@@ -1,0 +1,56 @@
+[
+  {
+    "meta-annotation-id": "q7dr881wr6xfjkipom7zy804",
+    "trace-id": "b08705935c0f07d2b3344a5e8b5d7abc",
+    "utterance-idx": 12,
+    "judge-model": "GPT-OSS-120B:high",
+    "judge-critique": "The response lacks a clarification query about the reported number of tablets and does not request an explicit yes/no confirmation before initiating the return.",
+    "meta-judgement": "Poor reason",
+    "meta-comment": "Criticism is in the right direction but isn't articulated very well, eg the model has only looked at 1/4 orders, this criticism should also be insisting that it investigates other orders, and should come down harder on the agent for wording mismatch of 'includes a tablet' and 'one of the two tablets'"
+  },
+  {
+    "meta-annotation-id": "nusq0du03p5yv30fhofrescx",
+    "trace-id": "b08705935c0f07d2b3344a5e8b5d7abc",
+    "utterance-idx": 12,
+    "judge-model": "GPT-OSS-120B:low",
+    "judge-critique": "The response includes misinformation about the order’s contents, leading to a misleading confirmation request.",
+    "meta-judgement": "Incorrect",
+    "meta-comment": "The details are correct."
+  },
+  {
+    "meta-annotation-id": "ikbyc4zvuepvqdle45m70wjc",
+    "trace-id": "b08705935c0f07d2b3344a5e8b5d7abc",
+    "utterance-idx": 14,
+    "judge-model": "GPT-OSS-120B:low",
+    "judge-critique": "Repeating the same tool call does not provide new information and fails to answer the user's request about a possible second tablet.",
+    "meta-judgement": "Spot on",
+    "meta-comment": null
+  },
+  {
+    "meta-annotation-id": "jw40i2hpe5jtgii2uwa68dbe",
+    "trace-id": "b08705935c0f07d2b3344a5e8b5d7abc",
+    "utterance-idx": 18,
+    "judge-model": "Qwen3-235B-A22B-Instruct-2507",
+    "judge-critique": "The agent is unnecessarily repeating the same tool call with identical parameters despite no new information being expected. This indicates a failure to recognize that repeated calls to `get_order_details` for the same order will not reveal additional items. The agent should instead explore other possibilities, such as checking earlier orders or asking the user to confirm if the second tablet was part of a different shipment.",
+    "meta-judgement": "Spot on",
+    "meta-comment": null
+  },
+  {
+    "meta-annotation-id": "kl5gudf8slhrn4rz9mo1ktgx",
+    "trace-id": "b08705935c0f07d2b3344a5e8b5d7abc",
+    "utterance-idx": 22,
+    "judge-model": "GPT-OSS-120B:low",
+    "judge-critique": "The agent’s current action does not address the user's latest request and repeats an unnecessary tool call, missing the required step of locating the correct order for the return.",
+    "meta-judgement": "Spot on",
+    "meta-comment": null
+  },
+  {
+    "meta-annotation-id": "nn0yhm7g7tseo1j9t2was8up",
+    "trace-id": "b08705935c0f07d2b3344a5e8b5d7abc",
+    "utterance-idx": 32,
+    "judge-model": "GPT-OSS-120B:low",
+    "judge-critique": "The assistant should have called the return tool with the correct parameters rather than fetching order details again.",
+    "meta-judgement": "Poor reason",
+    "meta-comment": "This call is redundant; but the model should not go straight to the return call, it first needs to get confirmation."
+  }
+]

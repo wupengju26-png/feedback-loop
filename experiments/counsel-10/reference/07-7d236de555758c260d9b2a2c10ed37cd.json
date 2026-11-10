@@ -1,0 +1,11 @@
+[
+  {
+    "meta-annotation-id": "ijxrmajjty5sct11vp82jr3o",
+    "trace-id": "7d236de555758c260d9b2a2c10ed37cd",
+    "utterance-idx": 10,
+    "judge-model": "GPT-OSS-120B:low",
+    "judge-critique": "The assistant should have clarified which of the listed orders is the relevant one before calling `get_order_details`. Proceeding without this clarification is a missed step in the workflow.",
+    "meta-judgement": "Incorrect",
+    "meta-comment": "The user notes they don't have the order id- so the model necessarily has to iterate through the orders to find the relevant one."
+  }
+]

@@ -1,0 +1,110 @@
+{
+  "dataset": "AtlaAI/counsel",
+  "dataset_url": "https://huggingface.co/datasets/AtlaAI/counsel",
+  "revision": "97801e8a9dfece812225035815c100a9ff21f5a4",
+  "source_license": "MIT (upstream dataset card)",
+  "retrieved_at": "2026-11-10T05:43:45.737677+00:00",
+  "selection": {
+    "seed": "feedback-loop-counsel-10-v1",
+    "method": "SHA256(seed + ':' + trace-id), ascending, five per environment",
+    "exclude_source_rows_below": 40,
+    "rationale": "Avoid viewer rows whose annotations were exposed during earlier research; selection does not use labels"
+  },
+  "provenance": "Hugging Face rows API; every response x-revision checked against pinned revision; truncated cells rejected",
+  "source_totals": {
+    "trajectories": 225,
+    "meta_annotations": 1131
+  },
+  "samples": [
+    {
+      "sample_id": "01-abd7779bc087bd7719a6f89e609f816b",
+      "trace_id": "abd7779bc087bd7719a6f89e609f816b",
+      "environment": "da-code",
+      "source_row_index": 157,
+      "messages": 23,
+      "input_file": "inputs/01-abd7779bc087bd7719a6f89e609f816b.json",
+      "input_sha256": "496d226e4b2ce71e61f83eacde08081d42ba98316663f291d26ad69b809afc01"
+    },
+    {
+      "sample_id": "02-b664c89700b0b5efba8a9ff33a4919c3",
+      "trace_id": "b664c89700b0b5efba8a9ff33a4919c3",
+      "environment": "da-code",
+      "source_row_index": 165,
+      "messages": 11,
+      "input_file": "inputs/02-b664c89700b0b5efba8a9ff33a4919c3.json",
+      "input_sha256": "6985d9a0260bda2366f2ed7156f1f8495e0744a2ed891111c9c604b97d2d6d4e"
+    },
+    {
+      "sample_id": "03-6fb96ef33934426e1c5deddd8cf139c6",
+      "trace_id": "6fb96ef33934426e1c5deddd8cf139c6",
+      "environment": "da-code",
+      "source_row_index": 96,
+      "messages": 11,
+      "input_file": "inputs/03-6fb96ef33934426e1c5deddd8cf139c6.json",
+      "input_sha256": "0bce021a9fb11e6e19f155c214dc5f771fc540f4859600a6531cdb61de251ef6"
+    },
+    {
+      "sample_id": "04-a46411fc0ff67e184202e47bcb0e2f67",
+      "trace_id": "a46411fc0ff67e184202e47bcb0e2f67",
+      "environment": "da-code",
+      "source_row_index": 150,
+      "messages": 9,
+      "input_file": "inputs/04-a46411fc0ff67e184202e47bcb0e2f67.json",
+      "input_sha256": "62b2aceb200f7b904c1058cd64ace20d5a5ddb9e597ca6cee96624c05fee085a"
+    },
+    {
+      "sample_id": "05-7a278f414113e7483f80d7530f7de6e6",
+      "trace_id": "7a278f414113e7483f80d7530f7de6e6",
+      "environment": "da-code",
+      "source_row_index": 108,
+      "messages": 11,
+      "input_file": "inputs/05-7a278f414113e7483f80d7530f7de6e6.json",
+      "input_sha256": "f63f4573e06d411a66fba8d78bf8c9094b32f3a2cbcbed95baf75f36e2434407"
+    },
+    {
+      "sample_id": "06-883ca6a9e20e9ab41403f246786a3a9a",
+      "trace_id": "883ca6a9e20e9ab41403f246786a3a9a",
+      "environment": "tau-bench-retail",
+      "source_row_index": 119,
+      "messages": 27,
+      "input_file": "inputs/06-883ca6a9e20e9ab41403f246786a3a9a.json",
+      "input_sha256": "49204aedd71e6d35653d28f94980df225fffd3f303d661c5c8ec5f6a61b4758b"
+    },
+    {
+      "sample_id": "07-7d236de555758c260d9b2a2c10ed37cd",
+      "trace_id": "7d236de555758c260d9b2a2c10ed37cd",
+      "environment": "tau-bench-retail",
+      "source_row_index": 110,
+      "messages": 23,
+      "input_file": "inputs/07-7d236de555758c260d9b2a2c10ed37cd.json",
+      "input_sha256": "6516b820e6a7cb109e660fbb4c89ed01d991b3bb07ca564c34dc876456e99b3e"
+    },
+    {
+      "sample_id": "08-9a18cee662cd836e22a3cc37fb3e393a",
+      "trace_id": "9a18cee662cd836e22a3cc37fb3e393a",
+      "environment": "tau-bench-retail",
+      "source_row_index": 137,
+      "messages": 29,
+      "input_file": "inputs/08-9a18cee662cd836e22a3cc37fb3e393a.json",
+      "input_sha256": "68f114767b81e9d87e6972332bfb64e111112a451ef5bcd5ae5acd3d66fefcb8"
+    },
+    {
+      "sample_id": "09-4bdf161be792a6c3c7c09a96b818c7ca",
+      "trace_id": "4bdf161be792a6c3c7c09a96b818c7ca",
+      "environment": "tau-bench-retail",
+      "source_row_index": 62,
+      "messages": 27,
+      "input_file": "inputs/09-4bdf161be792a6c3c7c09a96b818c7ca.json",
+      "input_sha256": "75e58676b1e9284af4fa800ff8184d5b617f5aa9101054a90e0571ddf161ade6"
+    },
+    {
+      "sample_id": "10-b08705935c0f07d2b3344a5e8b5d7abc",
+      "trace_id": "b08705935c0f07d2b3344a5e8b5d7abc",
+      "environment": "tau-bench-retail",
+      "source_row_index": 161,
+      "messages": 39,
+      "input_file": "inputs/10-b08705935c0f07d2b3344a5e8b5d7abc.json",
+      "input_sha256": "33c28b8fa39c53f6f4679e808af5ff5bef387fc82bdf2115886704788fb0dc92"
+    }
+  ]
+}

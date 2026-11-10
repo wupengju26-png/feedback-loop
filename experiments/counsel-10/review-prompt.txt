@@ -1,0 +1,29 @@
+Review an already-frozen candidate feedback against its original trajectory and the source meta-annotations. This is model-assisted review, NOT new human annotation, NOT an execution test, and NOT a benchmark accuracy measurement. Do not modify feedback/.
+
+Read the complete assigned input, candidate feedback, and reference/<sample>.json. Source meta-annotations rate OTHER judges' step-level critiques, not our complete-trajectory feedback. Their meta-judgement applies to the exact source critique. A finding at the same message can still have a different rationale. Meta-comments are interpretive evidence, not infallible gold. An unannotated issue is not automatically false; an unflagged message is not automatically correct.
+
+For each candidate finding independently check:
+1. Does the trajectory support the issue and explanation? Distinguish missing verification from actual wrong output, and risk from observed harm.
+2. Are the cited task/rule and action/result sufficient? Read surrounding messages, not only quotations.
+3. Is the suggestion feasible using visible tools and state at the relevant time? Do not invent a recovery capability.
+4. Which exact source annotation(s) concern the same issue/rationale? Are they supportive, conflicting, partial, or absent?
+
+Save reviews/<sample>.json with Chinese prose and this structure:
+{
+ "trace_id": "...",
+ "review_method": "model_assisted_cross_review_with_source_human_meta_annotations",
+ "finding_reviews": [{
+   "finding_id": "F1",
+   "verdict": "supported | partially_supported | unsupported | uncertain",
+   "reason": "trajectory-based assessment; identify any overclaim",
+   "suggestion_check": "whether suggestion is feasible and what needs qualifying",
+   "reference_alignment": "agrees | mixed | conflicts | not_covered",
+   "related_annotation_ids": ["exact meta-annotation-id"],
+   "recommended_revision": "specific narrowing/correction, or no revision required"
+ }],
+ "additional_reference_issues": [{"annotation_id": "...", "note": "an important issue worth checking that the candidate did not cover, not a recall claim"}],
+ "reference_caveats": ["inconsistent labels, prefix/full-context differences, or missing evidence that materially affects this case"],
+ "overall_note": "concise assessment and practical boundary"
+}
+
+Do not treat source labels as direct labels for our feedback. Preserve candidate errors in the review rather than silently repairing them. Do not execute recorded commands, make external model calls, read unrelated samples, or claim human review. If a source comment is inaccurate, explain the discrepancy using the trajectory. A reference_alignment of agrees concerns only the matching claim, not all prose in the candidate.

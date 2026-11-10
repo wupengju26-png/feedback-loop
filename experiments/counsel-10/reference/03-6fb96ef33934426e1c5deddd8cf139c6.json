@@ -1,0 +1,11 @@
+[
+  {
+    "meta-annotation-id": "hafxkqu4867opntw7j694hxm",
+    "trace-id": "6fb96ef33934426e1c5deddd8cf139c6",
+    "utterance-idx": 6,
+    "judge-model": "GPT-OSS-120B:high",
+    "judge-critique": "The step writes the output CSV without first checking the existing template file, risking a format mismatch.",
+    "meta-judgement": "Spot on",
+    "meta-comment": null
+  }
+]

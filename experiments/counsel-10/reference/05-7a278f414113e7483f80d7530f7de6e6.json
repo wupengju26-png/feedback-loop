@@ -1,0 +1,11 @@
+[
+  {
+    "meta-annotation-id": "g75yovbtparek596a6xmkk2w",
+    "trace-id": "7a278f414113e7483f80d7530f7de6e6",
+    "utterance-idx": 6,
+    "judge-model": "GPT-OSS-120B:high",
+    "judge-critique": "The current approach may produce a CSV that lacks rows for years with no data, failing to provide a count for every year from 2011 to 2016 as required.",
+    "meta-judgement": "Spot on",
+    "meta-comment": null
+  }
+]
