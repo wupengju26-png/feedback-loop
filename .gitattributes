@@ -1,0 +1,2 @@
+# Experiment hashes refer to exact file bytes, including existing line endings.
+experiments/counsel-10/** -text
